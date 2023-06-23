@@ -19,7 +19,7 @@
     #if defined(__arm__) || defined(__arm64__)
       #define PC_FROM_UCONTEXT uc_mcontext->__ss.__pc
     #else
-      #define PC_FROM_UCONTEXT uc_mcontext->__ss.__rip
+      #define PC_FROM_UCONTEXT uc_mcontext->__ss.__pc
     #endif
   #endif
 #elif defined(__arm__)
